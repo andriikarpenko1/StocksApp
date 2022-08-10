@@ -21,6 +21,10 @@
 		0D521BF828A43C2F002A1754 /* SFIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521BF728A43C2F002A1754 /* SFIcons.swift */; };
 		0D521BFB28A43CB1002A1754 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D521BFD28A43CB1002A1754 /* Localizable.strings */; };
 		0D521C0128A43CD3002A1754 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0028A43CD3002A1754 /* L10n.swift */; };
+		0D521C0428A43D56002A1754 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0328A43D56002A1754 /* TabBar.swift */; };
+		0D521C0828A43D82002A1754 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0728A43D82002A1754 /* AppSettings.swift */; };
+		0D521C0A28A43D9C002A1754 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0928A43D9C002A1754 /* AppTheme.swift */; };
+		0D521C0C28A43DAE002A1754 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0B28A43DAE002A1754 /* AppLanguage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		0D521BFC28A43CB1002A1754 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0D521BFE28A43CB5002A1754 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0D521C0028A43CD3002A1754 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		0D521C0328A43D56002A1754 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		0D521C0728A43D82002A1754 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		0D521C0928A43D9C002A1754 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		0D521C0B28A43DAE002A1754 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 		0D521BE528A43806002A1754 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				0D521C0228A43D46002A1754 /* TabBar */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				0D521BFF28A43CC7002A1754 /* Localization */,
+				0D521C0528A43D6A002A1754 /* Storage */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -152,6 +162,24 @@
 				0D521C0028A43CD3002A1754 /* L10n.swift */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		0D521C0228A43D46002A1754 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0D521C0328A43D56002A1754 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		0D521C0528A43D6A002A1754 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				0D521C0B28A43DAE002A1754 /* AppLanguage.swift */,
+				0D521C0728A43D82002A1754 /* AppSettings.swift */,
+				0D521C0928A43D9C002A1754 /* AppTheme.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,11 +254,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D521C0828A43D82002A1754 /* AppSettings.swift in Sources */,
 				0D521BF628A43C1A002A1754 /* Theme.swift in Sources */,
 				0D521BF228A43A8A002A1754 /* URLRequest.swift in Sources */,
 				0D521BD828A431A0002A1754 /* ContentView.swift in Sources */,
+				0D521C0428A43D56002A1754 /* TabBar.swift in Sources */,
 				0D521BEA28A438D1002A1754 /* APIConfiguration.swift in Sources */,
 				0D521BEC28A438E6002A1754 /* Endpoint.swift in Sources */,
+				0D521C0C28A43DAE002A1754 /* AppLanguage.swift in Sources */,
+				0D521C0A28A43D9C002A1754 /* AppTheme.swift in Sources */,
 				0D521BF028A4394B002A1754 /* NetworkError.swift in Sources */,
 				0D521BF428A43B92002A1754 /* ReposController.swift in Sources */,
 				0D521BD628A431A0002A1754 /* StocksAppApp.swift in Sources */,
