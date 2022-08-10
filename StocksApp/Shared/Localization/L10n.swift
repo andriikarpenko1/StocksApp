@@ -9,6 +9,18 @@ import Foundation
 
 enum L10n {
     
+    static var settingsTitle: String {
+        return translate(key: "settings_title")
+    }
+    
+    static var settingsDarkMode: String {
+        return translate(key: "settings_dark_mode")
+    }
+    
+    static var settingsLanguage: String {
+        return translate(key: "settings_language")
+    }
+    
     static var settingsEnglish: String {
         return translate(key: "settings_english")
     }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D521BD628A431A0002A1754 /* StocksAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521BD528A431A0002A1754 /* StocksAppApp.swift */; };
-		0D521BD828A431A0002A1754 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521BD728A431A0002A1754 /* ContentView.swift */; };
 		0D521BDA28A431A1002A1754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D521BD928A431A1002A1754 /* Assets.xcassets */; };
 		0D521BDD28A431A1002A1754 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D521BDC28A431A1002A1754 /* Preview Assets.xcassets */; };
 		0D521BEA28A438D1002A1754 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521BE928A438D1002A1754 /* APIConfiguration.swift */; };
@@ -25,12 +24,12 @@
 		0D521C0828A43D82002A1754 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0728A43D82002A1754 /* AppSettings.swift */; };
 		0D521C0A28A43D9C002A1754 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0928A43D9C002A1754 /* AppTheme.swift */; };
 		0D521C0C28A43DAE002A1754 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0B28A43DAE002A1754 /* AppLanguage.swift */; };
+		0D521C0F28A43EBD002A1754 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521C0E28A43EBD002A1754 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D521BD228A431A0002A1754 /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D521BD528A431A0002A1754 /* StocksAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppApp.swift; sourceTree = "<group>"; };
-		0D521BD728A431A0002A1754 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0D521BD928A431A1002A1754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D521BDC28A431A1002A1754 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D521BE928A438D1002A1754 /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		0D521C0728A43D82002A1754 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		0D521C0928A43D9C002A1754 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		0D521C0B28A43DAE002A1754 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		0D521C0E28A43EBD002A1754 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,6 @@
 		0D521BE328A4379A002A1754 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				0D521BD728A431A0002A1754 /* ContentView.swift */,
 				0D521BD528A431A0002A1754 /* StocksAppApp.swift */,
 				0D521BDB28A431A1002A1754 /* Preview Content */,
 			);
@@ -122,6 +121,7 @@
 		0D521BE528A43806002A1754 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				0D521C0D28A43EAE002A1754 /* Settings */,
 				0D521C0228A43D46002A1754 /* TabBar */,
 			);
 			path = Flows;
@@ -180,6 +180,14 @@
 				0D521C0928A43D9C002A1754 /* AppTheme.swift */,
 			);
 			path = Storage;
+			sourceTree = "<group>";
+		};
+		0D521C0D28A43EAE002A1754 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0D521C0E28A43EBD002A1754 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,12 +265,12 @@
 				0D521C0828A43D82002A1754 /* AppSettings.swift in Sources */,
 				0D521BF628A43C1A002A1754 /* Theme.swift in Sources */,
 				0D521BF228A43A8A002A1754 /* URLRequest.swift in Sources */,
-				0D521BD828A431A0002A1754 /* ContentView.swift in Sources */,
 				0D521C0428A43D56002A1754 /* TabBar.swift in Sources */,
 				0D521BEA28A438D1002A1754 /* APIConfiguration.swift in Sources */,
 				0D521BEC28A438E6002A1754 /* Endpoint.swift in Sources */,
 				0D521C0C28A43DAE002A1754 /* AppLanguage.swift in Sources */,
 				0D521C0A28A43D9C002A1754 /* AppTheme.swift in Sources */,
+				0D521C0F28A43EBD002A1754 /* SettingsView.swift in Sources */,
 				0D521BF028A4394B002A1754 /* NetworkError.swift in Sources */,
 				0D521BF428A43B92002A1754 /* ReposController.swift in Sources */,
 				0D521BD628A431A0002A1754 /* StocksAppApp.swift in Sources */,

@@ -17,7 +17,11 @@ struct TabBarView: View {
     
     var body: some View {
         TabView {
-            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: SFIcons.settingsTab.name)
+                    Text(L10n.settingsTitle)
+                }
         }.preferredColorScheme(appSettings.theme.colorScheme)
     }
 }
