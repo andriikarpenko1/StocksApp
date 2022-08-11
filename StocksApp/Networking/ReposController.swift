@@ -18,4 +18,6 @@ class ReposController {
     // MARK: - Repos
     
     lazy var marketRepo: MarketRepo = .init()
+    lazy var coinInfoRepo: CoinInfoRepo = .init()
+    lazy var coinChartRepo: CoinChartRepo = .init()
 }

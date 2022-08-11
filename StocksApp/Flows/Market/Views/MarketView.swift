@@ -12,7 +12,7 @@ struct MarketView: View {
     // MARK: - Properties
     
     @StateObject var viewModel: MarketViewModel
-//    @State private var selectedCoinVM: CoinInfoViewModel? = nil
+    @State private var selectedCoinVM: CoinInfoViewModel? = nil
     @State private var shouldShowInfo: Bool = false
     @EnvironmentObject private var appSettings: AppSettings
     
@@ -21,13 +21,13 @@ struct MarketView: View {
     var body: some View {
         NavigationView {
             coinsList.navigationTitle(L10n.marketTitle)
-//                .background(
-//                    NavigationLink(
-//                        destination: CoinInfoContainerView(vm: $selectedCoinVM),
-//                        isActive: $shouldShowInfo,
-//                        label: { EmptyView() }
-//                    )
-//                )
+                .background(
+                    NavigationLink(
+                        destination: CoinInfoContainerView(vm: $selectedCoinVM).onDisappear(perform: { shouldShowInfo = false }),
+                        isActive: $shouldShowInfo,
+                        label: { EmptyView() }
+                    )
+                )
         }
     }
 }
@@ -55,7 +55,7 @@ private extension MarketView {
     }
     
     private func showDetail(for id: String, title: String) {
-//        selectedCoinVM = .init(with: id, title: title)
+        selectedCoinVM = .init(with: id, title: title)
         shouldShowInfo.toggle()
     }
 }

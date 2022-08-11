@@ -7,11 +7,32 @@
 */
 
 "market_title" = "Market";
+"settings_title" = "Settings";
 "market_coin" = "Coin";
 "market_price" = "Price";
 "search_bar_title" = "Search...";
-"settings_title" = "Settings";
+"coin_info_identifier" = "Identifier";
+"coin_info_symbol" = "Symbol";
+"coin_info_hashing_algorithm" = "Hashing Algorithm";
+"coin_info_genesis_date" = "Genesis Date";
+"coin_info_market_cap" = "Market Cap";
+"coin_info_liquidity_score" = "Liquidity Score";
+"coin_info_coingecko_rank" = "Coingecko Rank";
+"coin_info_coingecko_score" = "Coingecko Score";
+"coin_info_developer_score" = "Developer Score";
+"coin_info_community_score" = "Community Score";
+"coin_info_audience_score" = "Audience Score";
+"coin_info_votes_up" = "Votes Up Percentage";
+"coin_info_market_stats" = "Market Stats";
+"coin_info_description" = "Description";
+"coin_info_general_info" = "General Info";
+"chart_title" = "Charts";
+"chart_price" = "Price";
+"chart_market_cap" = "Market Cap";
+"chart_volume" = "Volume";
+"delete" = "Delete";
 "settings_dark_mode" = "Dark Mode";
 "settings_language" = "Language";
 "settings_english" = "English";
 "settings_ukrainian" = "Ukrainian";
+"error_unknown" = "Error occured. Please try again";

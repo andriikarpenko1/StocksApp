@@ -22,4 +22,20 @@ extension NumberFormatter {
         numberFormatter.multiplier = 1
         return numberFormatter
     }()
+    
+    static var ordinalFormatter: NumberFormatter {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .ordinal
+        numberFormatter.locale = .preferredLanguageLocale
+        return numberFormatter
+    }
+    
+    static let decimalFormatter: NumberFormatter = {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.usesGroupingSeparator = true
+        numberFormatter.maximumFractionDigits = 2
+        numberFormatter.multiplier = 1
+        return numberFormatter
+    }()
 }

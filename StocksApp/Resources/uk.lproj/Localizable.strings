@@ -7,11 +7,32 @@
 */
 
 "market_title" = "Ринок";
+"settings_title" = "Налаштування";
 "market_coin" = "Монета";
 "market_price" = "Ціна";
 "search_bar_title" = "Пошук...";
-"settings_title" = "Налаштування";
+"coin_info_identifier" = "Ідентифікатор";
+"coin_info_symbol" = "Символ";
+"coin_info_hashing_algorithm" = "Хеш-алгоритм";
+"coin_info_genesis_date" = "Дата створення";
+"coin_info_market_cap" = "Ринкова капіталізація";
+"coin_info_liquidity_score" = "Оцінка ліквідності";
+"coin_info_coingecko_rank" = "Ранг Coingecko";
+"coin_info_coingecko_score" = "Оцінка Coingecko";
+"coin_info_developer_score" = "Оцінка розробників";
+"coin_info_community_score" = "Оцінка комʼюніті";
+"coin_info_audience_score" = "Оцінка аудиторії";
+"coin_info_votes_up" = "Співвідношення голосів";
+"coin_info_market_stats" = "Статистика ринку";
+"coin_info_description" = "Опис";
+"coin_info_general_info" = "Загальна інформація";
+"chart_title" = "Графіки";
+"chart_price" = "Ціна";
+"chart_market_cap" = "Ринкова капіталізація";
+"chart_volume" = "Обсяг ринку";
+"delete" = "Видалити";
 "settings_dark_mode" = "Темна тема";
 "settings_language" = "Мова";
 "settings_english" = "Англійська";
 "settings_ukrainian" = "Українська";
+"error_unknown" = "Сталася помилка. Спробуйте ще раз";
