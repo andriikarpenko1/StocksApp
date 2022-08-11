@@ -16,4 +16,6 @@ class ReposController {
     private init() {}
     
     // MARK: - Repos
+    
+    lazy var marketRepo: MarketRepo = .init()
 }

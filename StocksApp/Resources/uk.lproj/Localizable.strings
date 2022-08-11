@@ -6,6 +6,10 @@
   
 */
 
+"market_title" = "Ринок";
+"market_coin" = "Монета";
+"market_price" = "Ціна";
+"search_bar_title" = "Пошук...";
 "settings_title" = "Налаштування";
 "settings_dark_mode" = "Темна тема";
 "settings_language" = "Мова";

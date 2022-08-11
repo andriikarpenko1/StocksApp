@@ -17,6 +17,11 @@ struct TabBarView: View {
     
     var body: some View {
         TabView {
+            MarketView(viewModel: .init())
+                .tabItem {
+                    Image(systemName: SFIcons.marketTab.name)
+                    Text(L10n.marketTitle)
+                }
             SettingsView()
                 .tabItem {
                     Image(systemName: SFIcons.settingsTab.name)

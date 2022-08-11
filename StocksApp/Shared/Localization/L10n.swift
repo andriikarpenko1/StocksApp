@@ -9,6 +9,22 @@ import Foundation
 
 enum L10n {
     
+    static var marketTitle: String {
+        return translate(key: "market_title")
+    }
+    
+    static var marketCoin: String {
+        return translate(key: "market_coin")
+    }
+    
+    static var marketPrice: String {
+        return translate(key: "market_price")
+    }
+    
+    static var searchBarTitle: String {
+        return translate(key: "search_bar_title")
+    }
+    
     static var settingsTitle: String {
         return translate(key: "settings_title")
     }
